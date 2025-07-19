@@ -10,16 +10,18 @@ console.log(forComputerPrompt())
 
 function getComputerChoice(computerChoice){
 
+    const computerOption = forComputerPrompt();
 
-    if(forComputerPrompt() === 1){
+
+    if(computerOption === 1){
        computerChoice = "Rock";
        return computerChoice;
 
-    } else if(forComputerPrompt() === 2){
+    } else if(computerOption === 2){
         computerChoice = "Paper";
         return computerChoice;
 
-    } else if(forComputerPrompt() === 3){
+    } else if(computerOption === 3){
         computerChoice = "Scissors";
         return computerChoice;
 
