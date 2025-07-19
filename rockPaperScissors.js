@@ -1,11 +1,22 @@
-function getComputerChoice(number){
+function getComputerChoice(computerChoice){
     let weRandoNum = Math.random() * 3;
     let weFloorNum = Math.floor(weRandoNum) + 1
     console.log(weFloorNum)
 
+    if(weFloorNum === 1){
+       computerChoice = "Rock"
+       return computerChoice 
+    } else if(weFloorNum === 2){
+        computerChoice = "Paper"
+        return computerChoice
+    } else if(weFloorNum === 3){
+        computerChoice = "Scissors"
+        return computerChoice
+    }
+
 }
 
-getComputerChoice();
+console.log(getComputerChoice())
 
 
 
