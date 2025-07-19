@@ -31,10 +31,12 @@ function getComputerChoice(computerChoice){
 
 console.log(getComputerChoice());
 
+function forUserPrompt(theUserPrompt){
+    const userPrompt = Number(prompt("Enter a Number ranging from 1 to 3."));
+    theUserPrompt = userPrompt;
 
-const userPrompt = Number(prompt("Enter a Number ranging from 1 to 3.")); 
-    //console.log(typeof userPrompt) //to check if this is the correct type.
-    // console.log(userPrompt) // to confirm number being outputted to console. Can be commented out on project completion
+}
+console.log(forUserPrompt())
 
 
 function getHumanChoice(userChoice){
