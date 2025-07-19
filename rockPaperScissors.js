@@ -66,7 +66,7 @@ function playRound(forHumanChoice , forComputerChoice){
 
     }else if(userPrompt == 1 && weFloorNum == 3){
         humanScore ++;
-        console.log(humanScore)
+        console.log(`Your Score: ${humanScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. YAY You Win.`
 
     }else if(weFloorNum == 2 && userPrompt ==1){
@@ -74,7 +74,7 @@ function playRound(forHumanChoice , forComputerChoice){
 
     } else if(userPrompt == 2 && weFloorNum == 1){
         humanScore ++;
-        console.log(humanScore)
+        console.log(`Your Score: ${humanScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. YAY You Win.`
 
     } else if(weFloorNum == 3 && userPrompt == 2){
@@ -82,7 +82,7 @@ function playRound(forHumanChoice , forComputerChoice){
 
     } else if(userPrompt == 3 && weFloorNum == 2){
         humanScore ++;
-        console.log(humanScore)
+        console.log(`Your Score: ${humanScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. YAY You Win.`
     }
 
