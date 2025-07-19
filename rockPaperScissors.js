@@ -61,7 +61,7 @@ function getHumanChoice(userChoice){
 }
 console.log(getHumanChoice());
 
-/*
+
 
 let humanScore = 0;
 let computerScore = 0;
@@ -69,44 +69,46 @@ let computerScore = 0;
 
 function playRound(forHumanChoice , forComputerChoice){
     forComputerChoice = getComputerChoice();
+    
+
     forHumanChoice = getHumanChoice();
 
-    if(forComputerPrompt() == userPrompt){
+    if(forComputerPrompt() == forUserPrompt()){
         console.log(`Your Score: ${humanScore}`)
         console.log(`Computer Score: ${computerScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. This is a draw.`
 
-    } else if(forComputerPrompt() == 1 && userPrompt == 3){
+    } else if(forComputerPrompt() == 1 && forUserPrompt() == 3){
         computerScore ++;
         console.log(`Your Score: ${humanScore}`)
         console.log(`Computer Score: ${computerScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. The Computer Wins.`
 
-    }else if(forComputerPrompt()== 1 && weFloorNum == 3){
+    }else if(forComputerPrompt()== 3 && forUserPrompt() == 1){
         humanScore ++;
         console.log(`Your Score: ${humanScore}`)
         console.log(`Computer Score: ${computerScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. YAY You Win.`
 
-    }else if(forComputerPrompt() == 2 && userPrompt ==1){
+    }else if(forComputerPrompt() == 2 && forUserPrompt() ==1){
         computerScore ++;
         console.log(`Your Score: ${humanScore}`)
         console.log(`Computer Score: ${computerScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. The Computer Wins.`
 
-    } else if(forComputerPrompt() == 2 && weFloorNum == 1){
+    } else if(forComputerPrompt() == 1 && forUserPrompt() == 2){
         humanScore ++;
         console.log(`Your Score: ${humanScore}`)
         console.log(`Computer Score: ${computerScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. YAY You Win.`
 
-    } else if(forComputerPrompt() == 3 && userPrompt == 2){
+    } else if(forComputerPrompt() == 3 && forUserPrompt() == 2){
         computerScore ++;
         console.log(`Your Score: ${humanScore}`)
         console.log(`Computer Score: ${computerScore}`)
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. The Computer Wins.`
 
-    } else if(forComputerPrompt() == 3 && weFloorNum == 2){
+    } else if(forComputerPrompt() == 2 && forUserPrompt() == 3){
         humanScore ++;
         console.log(`Your Score: ${humanScore}`)
         console.log(`Computer Score: ${computerScore}`)
@@ -117,6 +119,12 @@ function playRound(forHumanChoice , forComputerChoice){
 }
 console.log(playRound())
 
-function playGame(){}
+function playGame(theGame){
+    theGame = playRound()
+    for(let gameStart = 0; gameStart < 5; gameStart ++){
 
-*/
+        return theGame;
+        
+    }
+}
+
