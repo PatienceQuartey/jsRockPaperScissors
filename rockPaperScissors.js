@@ -69,8 +69,14 @@ function playRound(forHumanChoice , forComputerChoice){
 
     }else if(weFloorNum == 2 && userPrompt ==1){
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. The Computer Wins.`
-        
+
     } else if(userPrompt == 2 && weFloorNum == 1){
+        return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. YAY You Win.`
+
+    } else if(weFloorNum == 3 && userPrompt == 2){
+        return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. The Computer Wins.`
+
+    } else if(userPrompt == 3 && weFloorNum == 2){
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. YAY You Win.`
     }
 
