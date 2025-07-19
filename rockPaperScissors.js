@@ -1,7 +1,10 @@
+const weRandoNum = Math.random() * 3;
+const weFloorNum = Math.floor(weRandoNum) + 1;
+// console.log(weFloorNum); // to confirm number number being outputted can be commented out on project completion
+
+
 function getComputerChoice(computerChoice){
-    let weRandoNum = Math.random() * 3;
-    let weFloorNum = Math.floor(weRandoNum) + 1;
-    // console.log(weFloorNum); // to confirm number number being outputted can be commented out on project completion
+
 
     if(weFloorNum === 1){
        computerChoice = "Rock";
@@ -49,3 +52,4 @@ console.log(getHumanChoice());
 
 let humanScore = 0;
 let computerScore = 0;
+
