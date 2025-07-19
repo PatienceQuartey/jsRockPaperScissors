@@ -39,9 +39,13 @@ function getHumanChoice(userChoice){
     } else if(userPrompt === 3){
         userChoice = "Scissors";
         return userChoice;
-        d
+        
     }
 
 
 }
 console.log(getHumanChoice());
+
+let humanScore = 0;
+let computerScore = 0;
+
