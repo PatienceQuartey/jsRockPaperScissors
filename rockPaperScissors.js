@@ -59,6 +59,9 @@ function playRound(forHumanChoice , forComputerChoice){
     forHumanChoice = getHumanChoice();
 
     if(weFloorNum == userPrompt){
+        computerScore ++;
+        console.log(`Your Score: ${computerScore}`)
+        
         return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. This is a draw.`
 
     } else if(weFloorNum == 1 && userPrompt == 3){
