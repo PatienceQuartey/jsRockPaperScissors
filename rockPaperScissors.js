@@ -5,7 +5,7 @@ function forComputerPrompt(compPrompt){
     return compPrompt
 
 }
-console.log(forComputerPrompt())
+// console.log(forComputerPrompt())
 
 
 function getComputerChoice(computerChoice){
@@ -34,22 +34,24 @@ console.log(getComputerChoice());
 function forUserPrompt(theUserPrompt){
     const userPrompt = Number(prompt("Enter a Number ranging from 1 to 3."));
     theUserPrompt = userPrompt;
+    return theUserPrompt;
 
 }
-console.log(forUserPrompt())
+// console.log(forUserPrompt())
 
 
 function getHumanChoice(userChoice){
+    const userOption = forUserPrompt();
     
-    if(userPrompt === 1){
+    if(userOption === 1){
         userChoice = "Rock";
         return userChoice;
 
-    } else if(userPrompt === 2){
+    } else if(userOption === 2){
         userChoice = "Paper";
         return userChoice;
 
-    } else if(userPrompt === 3){
+    } else if(userOption === 3){
         userChoice = "Scissors";
         return userChoice;
         
@@ -58,6 +60,8 @@ function getHumanChoice(userChoice){
 
 }
 console.log(getHumanChoice());
+
+/*
 
 let humanScore = 0;
 let computerScore = 0;
@@ -115,3 +119,4 @@ console.log(playRound())
 
 function playGame(){}
 
+*/
