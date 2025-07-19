@@ -53,3 +53,21 @@ console.log(getHumanChoice());
 let humanScore = 0;
 let computerScore = 0;
 
+
+function playRound(forHumanChoice , forComputerChoice){
+    forComputerChoice = getComputerChoice();
+    forHumanChoice = getHumanChoice();
+
+    if(weFloorNum == userPrompt){
+        return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. This is a draw.`
+
+    } else if(weFloorNum == 1 && userPrompt == 3){
+        return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. The Computer Wins.`
+
+    }else if(userPrompt == 1 && weFloorNum == 3){
+        return `The Computer chose ${forComputerChoice} and you chose ${forHumanChoice}. YAY You Win.`
+    }
+
+    
+}
+console.log(playRound())
