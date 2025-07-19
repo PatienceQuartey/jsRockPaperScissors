@@ -6,3 +6,19 @@ function getComputerChoice(number){
 }
 
 getComputerChoice();
+
+
+
+function getHumanChoice(userChoice){
+    const userPrompt = Number(prompt("Enter a Numnber ranging from 1 to 3.")) 
+    //console.log(typeof userPrompt) //to check if this is the correct type.
+    console.log(userPrompt) 
+
+    if(userPrompt === 1){
+        userChoice = "Rock"
+        return userChoice
+    }
+
+
+}
+console.log(getHumanChoice())
