@@ -17,6 +17,12 @@ function getHumanChoice(userChoice){
     if(userPrompt === 1){
         userChoice = "Rock"
         return userChoice
+    } else if(userPrompt === 2){
+        userChoice = "Paper"
+        return userChoice
+    } else if(userPrompt === 3){
+        userChoice = "Scissors"
+        return userChoice
     }
 
 
