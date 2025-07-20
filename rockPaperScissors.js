@@ -29,8 +29,8 @@ function getHumanChoice(userChoice){
     remUserWords = userChoice.slice(1);
     remUserWords = remUserWords.toLowerCase();
     console.log(userWord + remUserWords);
-
-
 }
 getHumanChoice();
 
+let humanScore = 0;
+let computerScore = 0;
