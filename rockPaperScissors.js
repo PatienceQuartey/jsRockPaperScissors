@@ -112,7 +112,16 @@ function playGame(){
     }
 
     if(theRound = 5){
-        console.log("The Game is now Over.")
+        console.log("The Game is now Over. Final Tally:")
+        if(computerScore == humanScore){
+            console.log(`Computer scored ${computerScore} and You scored ${humanScore}. Game is a tie. `);
+
+        }else if(computerScore > humanScore){
+            console.log(`Computer scored ${computerScore} and You scored ${humanScore}. The Computer won.`)
+
+        }else if(computerScore < humanScore){
+             console.log(`Computer scored ${computerScore} and You scored ${humanScore}. You won. YAY!!`)
+        }
     }
     
 }
