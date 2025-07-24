@@ -72,7 +72,7 @@ function playGame(){
                 console.log(`Computer Score ${computerScore}`);
                 console.log(`Your Score ${humanScore}`);
 
-            }else if(humanChoice == "Rock" && computerChoice == "Scissor"){
+            }else if(humanChoice == "Rock" && computerChoice == "Scissors"){
                 console.log(`The Computer chose ${computerChoice} and You chose ${humanChoice} - Rock bests Scissors so You win this round.`);
                 humanScore +=1;
                 console.log(`Computer Score ${computerScore}`);
@@ -109,6 +109,10 @@ function playGame(){
         /* ############### FOR SPACE ############ */
         console.log(theRound +=1);
 
+    }
+
+    if(theRound = 5){
+        console.log("The Game is now Over.")
     }
     
 }
